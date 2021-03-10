@@ -22,3 +22,6 @@ network:
       gateway4: 192.168.1.1
       nameservers:
           addresses: [192.168.1.70, 1.1.1.1]
+          
+ #then 
+ sudo netplan apply
