@@ -1,5 +1,19 @@
 # ssh ubuntu@whatever
 
+
+#hostname
+#s3-N storage
+#mk-N mk8s cluster
+#pi-N general appliance
+
+sudo hostnamectl set-hostname HOSTNAME
+
+sudo vim /etc/hosts
+127.0.0.1 HOSTNAME
+
+sudo vim /etc/cloud/cloud.cfg
+preserve_hostname: true
+
 # static nic for ubuntu arm
 sudo vim /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 #paste this
