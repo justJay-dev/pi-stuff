@@ -39,3 +39,9 @@ network:
           
  #then 
  sudo netplan apply
+ 
+ #then
+ sudo apt install cockpit
+ 
+ sudo systemctl disable network-manager.service
+sudo systemctl stop network-manager.service
