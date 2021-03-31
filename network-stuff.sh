@@ -10,15 +10,20 @@ sudo hostnamectl set-hostname HOSTNAME
 
 sudo vim /etc/hosts
 127.0.0.1 HOSTNAME
+#ORRRR
+sudo echo "127.0.0.1 HOSTNAME" > /etc/hosts
 
 sudo vim /etc/cloud/cloud.cfg
 preserve_hostname: true
+
+sudo echo "preserve_hostname: true" > /etc/cloud/cloud.cfg
 
 # static nic for ubuntu arm
 sudo vim /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 #paste this
 network: {config: disabled}
-
+# ORRRRR
+sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d./99-disable-network-config.cfg
 
 # then do 
 sudo vim /etc/netplan/01-netcfg.yaml
