@@ -35,7 +35,7 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    ens3:
+    eth0:
       dhcp4: no
       addresses:
         - 192.168.1.60/24
